@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "muli";
+}
+
+section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.additional-services {
+  position: relative;
+}
+
+.tm-container {
+  position: relative;
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.tm-row {
+  position: relative;
+  margin: 0 -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tm-col-3 {
+  position: relative;
+  width: calc(100% / 4);
+  padding: 0 12px;
+}
+
+.additional-services .heading {
+  position: relative;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.additional-services .heading h2 {
+  position: relative;
+  font: 600 17px / 1.3 "muli";
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.additional-services .heading p {
+  position: relative;
+  font: 400 17px / 1.7 "muli";
+  color: #717171;
+}
+
+.additional-services .services-wrap {
+  position: relative;
+}
+
+.additional-services .service-box {
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 24px;
+}
+
+.additional-services .service-box .head {
+  position: relative;
+}
+
+.additional-services .service-box .head .tm-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.additional-services .service-box .head .tm-radio input[type="radio"] {
+  display: none;
+}
+
+.additional-services .service-box .head .tm-radio .custom-radio {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #c1c1c1;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.additional-services
+  .service-box
+  .head
+  .tm-radio
+  input[type="radio"]:checked
+  + .custom-radio {
+  background-color: #00a699;
+  border: 2px solid #00a699;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.additional-services .service-box .head .tm-radio .text {
+  position: relative;
+  font: 600 16px / 1.2 "muli";
+  color: #000;
+}
+
+.additional-services .service-box .body {
+  position: relative;
+  padding: 12px;
+  display: none;
+}
+/* .additional-services .service-box .head:has(:checked) + .body {
+  display: block;
+} */
+.additional-services .service-box.active .body {
+  display: block;
+}
+
+.additional-services .service-box .body .select-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.additional-services .service-box .body .select-wrap label {
+  position: relative;
+  display: block;
+  font: 600 13px / 1.2 "muli";
+  color: #717171;
+  margin-bottom: 10px;
+}
+.additional-services .service-box .body .select-wrap select {
+  position: relative;
+  width: 91%;
+  padding: 10px;
+  border: 1px solid #c1c1c1;
+  font: 400 13px / 1.2 "muli";
+  color: #717171;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  /* background: url("./select-arrow.png") no-repeat calc(100% - 10px) center / 10px; */
+}
+
+.additional-services .service-box .body .select-wrap::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #717171;
+}
+
+.additional-services .service-box .body .submit-btn {
+  position: relative;
+}
+
+.additional-services .service-box .body [type="submit"] {
+  position: relative;
+  background: #00a699;
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  color: #fff;
+  font: 600 14px / 1.2 "muli";
+  cursor: pointer;
+}
+
+.additional-services .service-box .body .terms {
+  position: relative;
+  margin-top: 20px;
+}
+
+.additional-services .service-box .body .terms p {
+  font: 400 13px / 1.7 "muli";
+  color: #717171;
+}
+
+@media (max-width: 1199.98px) {
+  .tm-container {
+    width: 980px;
+  }
+  .tm-col-3 {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 991.98px) {
+  .tm-container {
+    width: 780px;
+  }
+  .tm-col-3 {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 767.98px) {
+  .tm-col-3 {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 575.98px) {
+  .tm-col-3 {
+    width: calc(100% / 1);
+  }
+}
